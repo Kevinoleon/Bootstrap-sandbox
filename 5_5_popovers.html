@@ -103,11 +103,16 @@
       Toggle popover
     </button>
 
+    <button class="btn btn-info" data-toggle="popover" data-placement="left" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.
+    Toggle popover">
+      Toggle popover
+    </button>
+
     <br>
     <br>
 
-   <!-- DISMISSIBLE POPOVER -->
-    <button id="hello" class="btn btn-primary" data-toggle="popover" data-placement="right" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.
+    <!-- DISMISSIBLE POPOVER -->
+    <button id="hello" class="btn btn-primary" data-toggle="popover" data-placement="left" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, inventore.
     Toggle popover" data-trigger="focus">
       Toggle popover
     </button>
@@ -118,7 +123,7 @@
     <button class="btn btn-secondary" onclick="showPopover()">Show Popover</button>
     <button class="btn btn-secondary" onclick="hidePopover()">Hide Popover</button>
     <button class="btn btn-secondary" onclick="togglePopover()">Toggle Popover</button>
-  </div> 
+  </div>
 
   <div style="margin-top:500px;"></div>
 
@@ -129,9 +134,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
   <script>
-    //init popovers
+    // Init Popover
     $('[data-toggle="popover"]').popover();
-    
+
     function showPopover() {
       $('#hello').popover('show');
     }
@@ -160,7 +165,6 @@
     $('#hello').on('hidden.bs.popover', function () {
       console.log('Popover hidden');
     });
-
   </script>
 </body>
 
